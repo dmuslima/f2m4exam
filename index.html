@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>React Pizza Clone</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- Навбар -->
+  <nav class="nav">
+    <img src="Group 1 (1).png" alt="logo" class="logo">
+    <button id="cartBtn" class="korzinka">
+      0 ₽ | 0 🛒
+    </button>
+  </nav>
+
+  <!-- Кнопки фильтра и сортировки -->
+  <div class="buttons">
+    <button class="vse">Все</button>
+    <button class="myasniye">Мясные</button>
+    <button class="vegetarianskaya">Вегетарианская</button>
+    <button class="gril">Гриль</button>
+    <button class="ostriye">Острые</button>
+    <button class="zakritiye">Закрытые</button>
+    <select id="sortBtn">
+      <option value="populyarnost">Сортировка по: популярности</option>
+      <option value="tsena">Сортировка по: цене</option>
+      <option value="alfavit">Сортировка по: алфавиту</option>
+    </select>
+  </div>
+
+  <h1>Все пиццы</h1>
+
+  <!-- Список пицц -->
+  <div class="pizzas"></div>
+
+  <!-- Страница корзины -->
+  <div id="cartPage" class="hidden">
+    <h2>Корзина</h2>
+    <div id="cartItems"></div>
+    <p id="emptyCart">Корзина пуста </p>
+    <h3>Итого: <span id="totalPrice">0</span> so'm</h3>
+    <button id="clearCart">Очистить корзину</button>
+    <button id="backBtn">Вернуться назад</button>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
